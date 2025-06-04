@@ -30,3 +30,14 @@ The PhA-MOE model integrates **Sparsely-Gated Mixture-of-Experts (MoE)** layers 
 This project uses the [**HyperCoast**](https://hypercoast.org) library for analyzing and visualizing hyperspectral data.
 - Free software: MIT License  
 - Documentation: [https://hypercoast.org](https://hypercoast.org)
+
+## Pretrained Models & Data Access
+
+All pretrained model checkpoints, sample datasets, and prediction outputs (e.g., PACE maps) are available at the following Google Drive link:
+
+**[Access Google Drive Folder](https://drive.google.com/drive/folders/1D2guZCrUm5PufIiwwIjijB6xteLeFkf6?usp=sharing)**
+
+Contents include:
+- 
+
+Please download the necessary files and place them into the appropriate folders before running the evaluation or visualization scripts.
