@@ -31,6 +31,8 @@ This project uses the [**HyperCoast**](https://hypercoast.org) library for analy
 - Free software: MIT License  
 - Documentation: [https://hypercoast.org](https://hypercoast.org)
 
+## Source codes
+
 ## Pretrained Models & Data Access
 
 All pretrained model checkpoints, sample datasets, and prediction outputs (e.g., PACE maps) are available at the following Google Drive link:
@@ -86,6 +88,62 @@ Processed versions of the raw Rrs and aPHY:
 
 Please download the necessary files and place them into the appropriate folders before running the evaluation or visualization scripts.
 **Please refer to our paper for more details on the dataset structure, preprocessing steps, and training/fine-tuning procedures.**
+
+### 2. `Pretrained Models/`
+This folder contains pretrained models and evaluation results for both the proposed **PhA-MOE** model and the baseline **MDN** model, across different spectral resolutions and configurations.
+
+#### `PhA-MOE on PACE data/`
+- Contains results for PhA-MOE trained on PACE-resolution (2nm) data.
+- Includes multiple training runs with different random seeds.
+- Best-performing seed: `seed_45`.
+
+#### `PhA-MOE on EMIT data/`
+- Contains results for PhA-MOE trained on EMIT-resolution (7nm) data.
+- Best-performing seed: `seed_51`.
+
+#### `MDN on PACE data/`
+- Contains results for the MDN baseline trained on PACE-resolution data.
+- Best-performing seed: `seed_53`.
+
+#### `MDN on EMIT data/`
+- Contains results for the MDN baseline trained on EMIT-resolution data.
+- Best-performing seed: `seed_44`.
+
+#### `Finetuning Results/`
+- Contains fine-tuning results on the 21-station experimental dataset.
+- Based on models initially trained on PACE-resolution data.
+- Best-performing fine-tuned seeds:
+  - PhA-MOE: `seed_68`
+  - MDN: `seed_45`
+
+Each seed folder contains:
+- Trained model checkpoint files (`*.pth`)
+- Ground truth and predicted aPHY values saved as `.npy` files:
+  - `all_train_targets.npy`, `all_train_outputs.npy`
+  - `all_test_targets.npy`, `all_test_outputs.npy`
+  - `all_targets.npy`, `all_outputs.npy`
+  
+These files represent the model's estimated aPHY spectra and the corresponding ground truth values on the training, test, and full datasets. They can be used for visualization and quantitative analysis.
+
+### 3. `preprocessing scalers/`
+This folder contains the fitted preprocessing scalers used to normalize both the input Rrs and target aPHY values, ensuring consistency between training, fine-tuning, and inference.
+
+#### `PACE/`
+- Preprocessing setup for 2nm resolution (PACE-style) data.
+- Includes:
+  - `x_preprocessor.pkl`: Robust scaler fitted on Rrs data using whole-band (WB) statistics.
+  - `y_preprocessor.pkl`: Log-transform followed by min-max scaling fitted on aPHY data.
+
+#### `EMIT/`
+- Preprocessing setup for 7nm resolution (EMIT-style) data.
+- Includes:
+  - `x_preprocessor.pkl`: Robust scaler fitted on Rrs data using wavelength-wise (WL) statistics.
+  - `y_preprocessor.pkl`: Log-transform followed by min-max scaling fitted on aPHY data.
+
+These scalers are required during any inference or fine-tuning stage to apply the same preprocessing used during training.  
+
+Their usage can be found in the code under `src/finetune/`, where models are fine-tuned using processed field data.
+
 
 # Cite
 
