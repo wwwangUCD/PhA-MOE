@@ -31,7 +31,61 @@ This project uses the [**HyperCoast**](https://hypercoast.org) library for analy
 - Free software: MIT License  
 - Documentation: [https://hypercoast.org](https://hypercoast.org)
 
-## Source codes
+## Source Code (`src/`)
+
+This directory contains the full implementation for model training, evaluation, fine-tuning, and visualization.
+
+### 1. `evaluate/`
+Contains code to evaluate model performance on test data. 
+Metrics include:
+- NRMSE (Normalized Root Mean Square Error)
+- MDSA (Mean Derivative Spectral Angle)
+- SSPB (Spectral Similarity Preserving Bias)
+- Regression slope between predicted and ground-truth aPHY.
+
+### 2. `finetune/`
+Scripts for fine-tuning pretrained models (PhA-MOE or MDN) on the 35-station experimental dataset.  
+Also includes code to:
+- Apply the pretrained model directly to field data.
+- Apply the fine-tuned model to PACE satellite data.
+
+These scripts can be adapted to use your own dataset for fine-tuning and inference.
+
+### 3. `models/`
+Contains implementations of all model architectures used in this work:
+- PhA-MOE (Mixture-of-Experts)
+- MDN (Mixture Density Network)
+- MLP (Multi-layer Perceptron)
+- VAE (Variational Autoencoder)
+
+### 4. `moe/`
+Utility scripts specific to the PhA-MOE architecture, including:
+- Extracting routing weights across datasets
+- Visualizing the routing distribution of experts
+
+### 5. `pace_map/`
+Code for processing and visualizing PACE satellite map data, including:
+- Reading and preprocessing satellite Rrs maps
+- Applying models to generate estimated aPHY maps
+- Patching and rendering RGB-Rrs-aPHY overlays for spatial visualization
+
+### 6. `train/`
+Scripts to train PhA-MOE, MDN, MLP, and VAE models on the Rrs–aPHY dataset.  
+Supports configurable training via arguments or config files.
+
+### 7. `utils/`
+Includes:
+- Metric computation functions
+- Data loading utilities
+- Helper functions for plotting and normalization
+
+### 8. `visualization/`
+Visualization scripts to support:
+- Boxplots of data distributions
+- Regression analysis of estimated vs ground-truth aPHY
+- Rainbow plots showing wavelength-wise performance
+- Map visualizations on PACE data
+
 
 ## Pretrained Models & Data Access
 
