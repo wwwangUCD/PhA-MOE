@@ -67,10 +67,10 @@ Processed versions of the raw Rrs and aPHY:
 
 #### d. `PACE Map Data/`
 - Satellite-derived data including:
-  - `original_map_data`: Raw PACE map files.
-  - `Rrs_map`: Rrs extracted from the PACE satellite images.
-  - `aphy_estimation`: Our model’s output estimation for aPHY.
-- Field experiment data:
+  - `Original PACE Data/4Seasons`: Raw PACE map files.
+  - `Rrs Map from PACE Map `: Rrs extracted from the PACE satellite images.
+  - `Aphy Map Estimated from Rrs Map`: Our model’s output estimation for aPHY.
+- Field experiment data: `35 Stations Data For Finetuning/`
   - `Estuary_HPLC sites_Fall_2024.xlsx`: Measurements at 35 stations.
   - `eval_data.csv`: 21 stations, **used for fine-tuning**.
   - `ft_data.csv`: 14 stations, **used for evaluation**.
@@ -78,8 +78,8 @@ Processed versions of the raw Rrs and aPHY:
 > **Note**: The filenames `eval_data.csv` and `ft_data.csv` are intentionally swapped relative to their actual use. We keep the original names for consistency with the codebase.
 
 - Extracted Rrs from PACE map:
-  - `ft_Rrs_all_stations`: Matches locations from `ft_data.csv` (some locations missing, e.g., index 4).
-  - `Rrs_data_fromMap_ft_train`: Matches locations from `eval_data.csv` (e.g., indices 6, 16 missing).
+  - `ft_Rrs_all_stations`: Matches locations from `ft_data.csv` on the PACE map data(some locations missing, e.g., index 4).
+  - `Rrs_data_fromMap_ft_train`: Matches locations from `eval_data.csv` on the PACE map data (some locations missing, e.g., indices 6, 16 missing).
 - See `map_finetune_scatter_Rrs.py` for precise details on indexing and missing entries.
 
 
