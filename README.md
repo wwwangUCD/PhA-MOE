@@ -21,11 +21,6 @@ Metrics include:
 - Regression slope between predicted and ground-truth aPHY.
 
 ### 2. `finetune/`
-Scripts for fine-tuning pretrained models (PhA-MOE or MDN) on the 35-station experimental dataset.  
-Also includes code to:
-- Apply the pretrained model directly to field data.
-- Apply the fine-tuned model to PACE satellite data.
-
 These scripts can be adapted to use your own dataset for fine-tuning and inference.
 
 ### 3. `models/`
