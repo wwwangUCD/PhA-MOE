@@ -60,7 +60,7 @@ Visualization scripts to support:
 
 If you have any questions with our work, feel free to contact us:
 
-Email: (wwwang1915@gmail.com)
+Email: wwwang1915@gmail.com
 
 # Acknowledgement
 1. **HyperCoast**: [https://hypercoast.org](https://hypercoast.org)
