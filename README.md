@@ -176,7 +176,7 @@ These scalers are required during any inference or fine-tuning stage to apply th
 Their usage can be found in the code under `src/finetune/`, where models are fine-tuned using processed field data.
 
 
-# Cite
+# Reference
 
 If you find this work useful, please cite our paper:
 
