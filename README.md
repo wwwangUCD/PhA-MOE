@@ -1,6 +1,11 @@
 # PhA-MOE
 This repository contains the source code for the **PhA-MOE** model for **phytoplankton absorption estimation**.
 
+## Requirements
+
+- Python: 3.9
+- Pytorch: 2.2.0+cu118
+
 ## Source Code (`src/`)
 
 This directory contains the full implementation for model training, evaluation, fine-tuning, and visualization.
@@ -61,9 +66,7 @@ If you have any questions with our work, feel free to contact us:
 Email: (wwwang1915@gmail.com)
 
 # Acknowledgement
-1. HyperCoast:
-- Free software: MIT License  
-- Documentation: [https://hypercoast.org](https://hypercoast.org)
+1. **HyperCoast**: [https://hypercoast.org](https://hypercoast.org)
   
 2. MDN: 
 3. MoE: 
