@@ -68,8 +68,10 @@ Email: (wwwang1915@gmail.com)
 # Acknowledgement
 1. **HyperCoast**: [https://hypercoast.org](https://hypercoast.org)
   
-2. MDN: 
-3. MoE: 
+2. **MDN**: [https://github.com/BrandonSmithJ/MDN](https://github.com/BrandonSmithJ/MDN) ["Seamless retrievals of chlorophyll-a from Sentinel-2 (MSI) and Sentinel-3 (OLCI) in inland and coastal waters: A machine-learning approach"](https://www.sciencedirect.com/science/article/pii/S0034425719306248)_  
+> N. Pahlevan, et al. (2020), Remote Sensing of Environment. DOI: [10.1016/j.rse.2019.111604](https://doi.org/10.1016/j.rse.2019.111604)
+3. **MoE**:
+
 
 # Reference
 
