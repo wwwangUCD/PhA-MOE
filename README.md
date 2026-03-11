@@ -1,13 +1,6 @@
 # PhA-MOE
 This repository contains the source code for the **PhA-MOE** model for **phytoplankton absorption estimation**.
 
-  
-## Visualization with HyperCoast
-
-This project uses the [**HyperCoast**](https://hypercoast.org) library for analyzing and visualizing hyperspectral data.
-- Free software: MIT License  
-- Documentation: [https://hypercoast.org](https://hypercoast.org)
-
 ## Source Code (`src/`)
 
 This directory contains the full implementation for model training, evaluation, fine-tuning, and visualization.
@@ -62,6 +55,18 @@ Visualization scripts to support:
 - Regression analysis of estimated vs ground-truth aPHY
 - Rainbow plots showing wavelength-wise performance
 - Map visualizations on PACE data
+
+If you have any questions with our work, feel free to contact us:
+
+Email: (wwwang1915@gmail.com)
+
+# Acknowledgement
+1. HyperCoast:
+- Free software: MIT License  
+- Documentation: [https://hypercoast.org](https://hypercoast.org)
+  
+2. MDN: 
+3. MoE: 
 
 # Reference
 
