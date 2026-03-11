@@ -1,5 +1,7 @@
 # PhA-MOE
-This repository contains the source code for the **PhA-MOE** model for **phytoplankton absorption estimation** (https://www.mdpi.com/2072-4292/17/12/2103).
+This repository contains the source code for the **PhA-MOE** model for **phytoplankton absorption estimation** 
+
+W. Wang, B. Liu, S. Gao, J. Li, Y. Zhou, S. Zhang, and Z. Ding “PhA-MOE: Enhancing Hyperspectral Retrievals for Phytoplankton Absorption Using Mixture-of-Experts”, in MDPI Remote Sensing, 2025 [Link](https://www.mdpi.com/2072-4292/17/12/2103).
 
 ## Requirements
 
