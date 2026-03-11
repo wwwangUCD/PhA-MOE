@@ -1,5 +1,5 @@
 # PhA-MOE
-This repository contains the source code for the **PhA-MOE** model for **phytoplankton absorption estimation**.
+This repository contains the source code for the **PhA-MOE** model for **phytoplankton absorption estimation** (https://www.mdpi.com/2072-4292/17/12/2103).
 
 ## Requirements
 
@@ -68,9 +68,16 @@ Email: (wwwang1915@gmail.com)
 # Acknowledgement
 1. **HyperCoast**: [https://hypercoast.org](https://hypercoast.org)
   
-2. **MDN**: [https://github.com/BrandonSmithJ/MDN](https://github.com/BrandonSmithJ/MDN) ["Seamless retrievals of chlorophyll-a from Sentinel-2 (MSI) and Sentinel-3 (OLCI) in inland and coastal waters: A machine-learning approach"](https://www.sciencedirect.com/science/article/pii/S0034425719306248)_  
-> N. Pahlevan, et al. (2020), Remote Sensing of Environment. DOI: [10.1016/j.rse.2019.111604](https://doi.org/10.1016/j.rse.2019.111604)
-3. **MoE**:
+2. **MDN**: [https://github.com/BrandonSmithJ/MDN](https://github.com/BrandonSmithJ/MDN)
+   
+   N. Pahlevan, et al. (2020), Remote Sensing of Environment,
+   ["Seamless retrievals of chlorophyll-a from Sentinel-2 (MSI) and Sentinel-3 (OLCI) in inland and coastal waters: A machine-learning approach"](https://www.sciencedirect.com/science/article/pii/S0034425719306248)
+
+
+3. **MoE**: [mixture-of-experts/moe.py](https://github.com/davidmrau/mixture-of-experts)
+
+   Shazeer et al., 2017 (Google Brain),
+   ["Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"](https://arxiv.org/abs/1701.06538)
 
 
 # Reference
